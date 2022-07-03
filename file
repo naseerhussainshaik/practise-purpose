@@ -1,0 +1,66 @@
+mkdir
+rmdir
+rm -rf
+touch
+ls
+ls -a1
+vim 
+cat
+cd ..
+cd
+cp
+mv
+java -version
+mvn -version
+history
+git status
+git clone url
+git add .
+git commit -m "add any commit"
+git push
+git init ot git checkout -b "master"
+git add .
+git commit -m "add any commit"
+git remote add origin url
+git push origin master
+
+mvn archetype:generate
+then all dependancies will appears and select one dependancy number : 3
+again : 3
+group id:
+artifact id:
+snapshot version:
+output version: jar, war etc..
+yes/no :y
+then your pom.xml file will created
+
+to compile that file run the following commands and maven is a java based tool and it depends on java....
+
+1. mvn clean
+2. mvn compile
+3. mvn test
+4. mvn package
+5. mvn install
+6. mvn deploy
+
+
+java -jar jenkins.war
+Declarative pipeline:
+
+pipeline {
+agent any {
+stages {
+stage {
+steps {
+sh '''
+pwd
+rm -rf *
+git clone url
+'''
+}
+}
+}
+}
+}
+
+mvn sonar:sonar
